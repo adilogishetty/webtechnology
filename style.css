@@ -1,0 +1,43 @@
+body {
+	background-color:white;
+}
+
+h1 {
+background-color: black;	
+color: white;
+
+}
+.image:hover img {
+	-webkit-transform: scale(1.15); /* Safari and Chrome */
+	-moz-transform: scale(1.15); /* Firefox */
+	-ms-transform: scale(1.15); /* IE 9 */
+	-o-transform: scale(1.15); /* Opera */
+	transform: scale(1.15);
+	border: 0;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+article {
+    margin-left: 220px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+.skil {
+	font-size: 120%;
+	color: blue;
+}
