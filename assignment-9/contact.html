@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="stylesheet" href="code.css">
+
+
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script type="text/javascript" src="code.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96382519-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+.centered
+{
+    text-align:center;
+}
+button {
+	width: 380px;
+	height: 45px;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: transparent;
+	border-color: white;
+	margin-bottom: 5px;
+}
+.btn-primary:hover {
+	color: #27A967;
+	background-color: white;
+	border-color: white;
+}
+.navbar {
+	margin-bottom: 0;
+}
+
+
+.navbar-inverse {
+	background: #000000;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #f7f7f7;
+	font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background: #9e61c6;
+}
+</style>
+
+<script>
+
+function home(){
+	window.location.href = "main.html";
+}
+function bio(){
+	window.location.href = "bio.html";
+	
+}
+function resume(){
+	window.location.href = "resume.html";
+	
+}
+function contact(){
+	window.location.href = "contact.html";
+	
+}
+</script>
+<style>
+button {
+	width: 380px;
+	height: 45px;
+}
+</style>
+</head>
+<body style="background-image: url(sample1.jpg)">
+	<div id="tab4" align="center">
+		<!-- page 4 -->
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav ">
+  <li><a href="#" class ="home1" onclick = "home()">Home</a>
+  <li><a href="#" class ="bio1" onclick = "bio()">Bio</a>
+  <li><a href="#" class ="resume1" onclick = "resume()">Resume</a>
+  <li><a href="#" class ="contact1" onclick = "contact()">Contact</a>
+</ul>
+</div>
+</div>
+</nav>
+
+		<form method="POST" action="http://formspree.io/adi.logishetty@gmail.com">
+<h1 style="font-color: #05061c;">Contact me</h1>
+				<select id:"subjectDetails">    					
+  					</select>
+					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  					<script>
+						var $select = $('#subjectDetails');
+						$.getJSON("reason.json", function(data) {
+							for(var i=0; i<data['subjectDetails'].length;i++){
+								$select.append('<option id="'+ data['subjectDetails'][i]['id']+'">'+ data['subjectDetails'][i]['name']+'</option>' );
+							}
+						});
+					</script>
+				</select><br>
+  <input type="text" id="name" name="sender name" size="48" placeholder="Name" value="" align="center" width="100" height="120" pattern ="^[a-zA-Z][0-9a-zA-Z .,'-]*$" required /> <br><br>
+  <input type="email" name="email" size="48" placeholder="Your email" width="100" height="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/><br><br>
+  <input type="text" name="subject" size="48" placeholder="Enter Subject" value="" class="radius" align="center" width="100" height="100" required /><br><br>
+  <textarea rows="10" cols="50" name="message" placeholder="Your message" width="100" height="100"></textarea><br><br>
+   <div class="centered">
+	<button type="button" class="btn btn-primary btn-lg active">Submit</button>
+	</div>
+
+</form>
+<div class="footer">
+
+ <h4 align="center"><b>Copyright &copy; Aditya Logishetty</b></h4>
+<div class="text-center center-block"><a href="https://github.com/adilogishetty" target="_blank"><i class="fa fa-github-square fa-3x social"></i></a>
+                <a href="https://www.facebook.com/adi.logishetty" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                 <a href="https://www.linkedin.com/in/aditya-logishetty-24bb7295/" target="_blank"><i id="social-em" class="fa fa-linkedin-square fa-3x social"></i></a>
+            </div>            
+        <br>
+
+        <div class="text-center center-block">
+	
+	<!-- /tab4 -->
+</body>
+</html>
