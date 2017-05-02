@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="css.css">
+<script type="text/javascript" src="code.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body style= "background-image: url(sample.jpg)">
+
+<!-- page 1 -->
+<br><br><br><br>
+
+<h2 style="font-family:Arial Black; font-size:300%; text-align:center;">Hi!</h2>
+	<p style = "font-size:180%;text-align:center;">I am</p> 
+<h2 style = "font-size:440% ;text-align:center;" ><b>ADITYA LOGISHETTY</b></h2>
+	<p style = "font-size:120%; text-align:center;font-family:Arial Bold;"> I am a graduate student at Marist College specializing in Information Systems Management.</p>
+	<p style = "font-size:120%;text-align:center;font-family:Arial Bold;"> This web site consists of my professional and technical background</p>
+	
+
+<!-- /tab1 -->
+
+</body>
+</html>
